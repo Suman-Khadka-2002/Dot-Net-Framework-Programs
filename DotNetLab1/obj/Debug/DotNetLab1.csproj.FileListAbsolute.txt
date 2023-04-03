@@ -1,0 +1,16 @@
+C:\Users\Admin\source\repos\SUMAN 6th Sem .NET\DotNetLab1\bin\Debug\DotNetLab1.exe.config
+C:\Users\Admin\source\repos\SUMAN 6th Sem .NET\DotNetLab1\bin\Debug\DotNetLab1.exe
+C:\Users\Admin\source\repos\SUMAN 6th Sem .NET\DotNetLab1\bin\Debug\DotNetLab1.pdb
+C:\Users\Admin\source\repos\SUMAN 6th Sem .NET\DotNetLab1\obj\Debug\DotNetLab1.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\SUMAN 6th Sem .NET\DotNetLab1\obj\Debug\DotNetLab1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\repos\SUMAN 6th Sem .NET\DotNetLab1\obj\Debug\DotNetLab1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\SUMAN 6th Sem .NET\DotNetLab1\obj\Debug\DotNetLab1.exe
+C:\Users\Admin\source\repos\SUMAN 6th Sem .NET\DotNetLab1\obj\Debug\DotNetLab1.pdb
+C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\DotNetLab1\bin\Debug\DotNetLab1.exe.config
+C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\DotNetLab1\bin\Debug\DotNetLab1.exe
+C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\DotNetLab1\bin\Debug\DotNetLab1.pdb
+C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\DotNetLab1\obj\Debug\DotNetLab1.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\DotNetLab1\obj\Debug\DotNetLab1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\DotNetLab1\obj\Debug\DotNetLab1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\DotNetLab1\obj\Debug\DotNetLab1.exe
+C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\DotNetLab1\obj\Debug\DotNetLab1.pdb
