@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,13 @@ namespace DotNetLab1
     {
         static void Main(string[] args)
         {
+            FileStream file = new FileStream("myfile.dat", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            //file.WriteByte((byte)10);
+            Console.WriteLine(file.ReadByte() + "");
+            file.Close();
+
+            //List 
+            /*
             List<int> list= new List<int>();
             list.Add(1001);
             list.Add(1002);
@@ -21,6 +29,7 @@ namespace DotNetLab1
             {
                 Console.WriteLine("Roll No. : " + item);
             }
+            */
 
             /*
             Hashtable mylist = new Hashtable();
