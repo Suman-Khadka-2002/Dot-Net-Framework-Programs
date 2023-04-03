@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,28 @@ namespace DotNetLab1
     {
         static void Main(string[] args)
         {
+            List<int> list= new List<int>();
+            list.Add(1001);
+            list.Add(1002);
+            list.Add(1003);
+
+            foreach(var item in list)
+            {
+                Console.WriteLine("Roll No. : " + item);
+            }
+
+            /*
+            Hashtable mylist = new Hashtable();
+            mylist.Add("College", "BMC");
+            mylist.Add("mobile", "9874973");
+
+            foreach (var item in mylist.Keys) 
+            {
+                Console.WriteLine("Key is " + item + " and value is " + mylist[item]);
+            }
+            */
+
+            /*
             ArrayList mylist = new ArrayList();
             mylist.Add("BMC");
             mylist.Add(1234);
@@ -21,6 +44,7 @@ namespace DotNetLab1
             {
                 Console.WriteLine(item);
             }
+            */
 
            /*
             Indexer indexer = new Indexer();
