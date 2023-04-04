@@ -18,6 +18,6 @@ namespace DotNetLab1
 
     partial class Indexer
     {
-        public string collge;
+        public string college;
     }
 }
