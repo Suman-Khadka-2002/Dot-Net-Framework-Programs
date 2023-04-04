@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,12 +12,33 @@ namespace DotNetLab1
 {
     internal class Program
     {
+        public delegate void WhatIEat();
+        public delegate void WhatIEats(string food);
+
         static void Main(string[] args)
         {
+            Animals cow = new Animals();
+            Animals dog = new Animals();
+
+
+            WhatIEat eat = new WhatIEat(cow.WhatIEat);
+            WhatIEats eats = new WhatIEats(dog.WhatIEats);
+
+            eat();
+            eats("bone");
+            
+            
+
+
+
+
+            // file IO
+            /*
             FileStream file = new FileStream("myfile.dat", FileMode.OpenOrCreate, FileAccess.ReadWrite);
             //file.WriteByte((byte)10);
             Console.WriteLine(file.ReadByte() + "");
             file.Close();
+            */
 
             //List 
             /*
