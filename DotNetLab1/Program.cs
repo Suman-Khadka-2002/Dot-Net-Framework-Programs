@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,31 +13,42 @@ namespace DotNetLab1
 {
     internal class Program
     {
-
         static void Main(string[] args) 
         {
+        /*
+         // task async 
+
             Function1();
             Function2();
-            
-
-        // delegate program
-        /*
-        public delegate void WhatIEat();
-        public delegate void WhatIEats(string food);
-
-        static void Main(string[] args)
-        {
-            Animals cow = new Animals();
-            Animals dog = new Animals();
-
-
-            WhatIEat eat = new WhatIEat(cow.WhatIEat);
-            WhatIEats eats = new WhatIEats(dog.WhatIEats);
-
-            eat();
-            eats("bone");
-            
         */
+
+            // delegate program
+            /*
+            public delegate void WhatIEat();
+            public delegate void WhatIEats(string food);
+
+            static void Main(string[] args)
+            {
+                Animals cow = new Animals();
+                Animals dog = new Animals();
+
+
+                WhatIEat eat = new WhatIEat(cow.WhatIEat);
+                WhatIEats eats = new WhatIEats(dog.WhatIEats);
+
+                eat();
+                eats("bone");
+
+            */
+
+            //Constructor
+
+            PersonC person1 = new PersonC("Suman", 20);
+            person1.SayHello();
+            
+            PersonC person2 = new PersonC("Jane", 22);
+            person2.SayHello();
+
 
 
         // file IO
@@ -163,6 +175,8 @@ namespace DotNetLab1
             Console.ReadKey();
         }
 
+    // task async continue...
+    /*
         public static async Task Function1() 
         {
             await Task.Run(() =>
@@ -182,6 +196,8 @@ namespace DotNetLab1
                 Task.Delay(100).Wait();
             }
         }
+
+    */
 
 
         /*

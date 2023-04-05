@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="constructorClass.cs" />
     <Compile Include="delegateFunc.cs" />
     <Compile Include="Indexer.cs" />
     <Compile Include="Overloading.cs" />

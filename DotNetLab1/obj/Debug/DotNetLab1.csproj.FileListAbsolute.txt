@@ -14,3 +14,11 @@ C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\DotNetLab1\obj\Debug\DotN
 C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\DotNetLab1\obj\Debug\DotNetLab1.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\DotNetLab1\obj\Debug\DotNetLab1.exe
 C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\DotNetLab1\obj\Debug\DotNetLab1.pdb
+E:\. NET programs\DotNetLab1\bin\Debug\DotNetLab1.exe.config
+E:\. NET programs\DotNetLab1\bin\Debug\DotNetLab1.exe
+E:\. NET programs\DotNetLab1\bin\Debug\DotNetLab1.pdb
+E:\. NET programs\DotNetLab1\obj\Debug\DotNetLab1.csproj.AssemblyReference.cache
+E:\. NET programs\DotNetLab1\obj\Debug\DotNetLab1.csproj.SuggestedBindingRedirects.cache
+E:\. NET programs\DotNetLab1\obj\Debug\DotNetLab1.csproj.CoreCompileInputs.cache
+E:\. NET programs\DotNetLab1\obj\Debug\DotNetLab1.exe
+E:\. NET programs\DotNetLab1\obj\Debug\DotNetLab1.pdb
