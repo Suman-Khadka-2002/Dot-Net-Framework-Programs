@@ -44,7 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArraysString.cs" />
+    <Compile Include="defaultConstructor.cs" />
     <Compile Include="helloWorld.cs" />
+    <Compile Include="Inheritence.cs" />
+    <Compile Include="MultipleInheritence.cs" />
     <Compile Include="overlaod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
