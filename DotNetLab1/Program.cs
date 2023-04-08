@@ -15,12 +15,12 @@ namespace DotNetLab1
     {
         static void Main(string[] args) 
         {
-        /*
-         // task async 
+            /*
+             // task async 
 
-            Function1();
-            Function2();
-        */
+                Function1();
+                Function2();
+            */
 
             // delegate program
             /*
@@ -42,136 +42,136 @@ namespace DotNetLab1
             */
 
             //Constructor
-
+            /*
             PersonC person1 = new PersonC("Suman", 20);
             person1.SayHello();
             
             PersonC person2 = new PersonC("Jane", 22);
             person2.SayHello();
+            */
 
 
+            // file IO
+            /*
+            FileStream file = new FileStream("myfile.dat", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            //file.WriteByte((byte)10);
+            Console.WriteLine(file.ReadByte() + "");
+            file.Close();
+            */
 
-        // file IO
-        /*
-        FileStream file = new FileStream("myfile.dat", FileMode.OpenOrCreate, FileAccess.ReadWrite);
-        //file.WriteByte((byte)10);
-        Console.WriteLine(file.ReadByte() + "");
-        file.Close();
-        */
+            //List 
+            /*
+            List<int> list= new List<int>();
+            list.Add(1001);
+            list.Add(1002);
+            list.Add(1003);
 
-        //List 
-        /*
-        List<int> list= new List<int>();
-        list.Add(1001);
-        list.Add(1002);
-        list.Add(1003);
+            foreach(var item in list)
+            {
+                Console.WriteLine("Roll No. : " + item);
+            }
+            */
 
-        foreach(var item in list)
-        {
-            Console.WriteLine("Roll No. : " + item);
-        }
-        */
+            /*
+            Hashtable mylist = new Hashtable();
+            mylist.Add("College", "BMC");
+            mylist.Add("mobile", "9874973");
 
-        /*
-        Hashtable mylist = new Hashtable();
-        mylist.Add("College", "BMC");
-        mylist.Add("mobile", "9874973");
+            foreach (var item in mylist.Keys) 
+            {
+                Console.WriteLine("Key is " + item + " and value is " + mylist[item]);
+            }
+            */
 
-        foreach (var item in mylist.Keys) 
-        {
-            Console.WriteLine("Key is " + item + " and value is " + mylist[item]);
-        }
-        */
+            /*
+            ArrayList mylist = new ArrayList();
+            mylist.Add("BMC");
+            mylist.Add(1234);
+            mylist.Add("Ab-2");
+            mylist.Add("hello cutie");
 
-        /*
-        ArrayList mylist = new ArrayList();
-        mylist.Add("BMC");
-        mylist.Add(1234);
-        mylist.Add("Ab-2");
-        mylist.Add("hello cutie");
+            foreach (var item in mylist)
+            {
+                Console.WriteLine(item);
+            }
+            */
 
-        foreach (var item in mylist)
-        {
-            Console.WriteLine(item);
-        }
-        */
+            /*
+             Indexer indexer = new Indexer();
+             indexer[0] = "Suman";
+             indexer[1] = "Utsav";
+             indexer[2] = "Ronit";
 
-        /*
-         Indexer indexer = new Indexer();
-         indexer[0] = "Suman";
-         indexer[1] = "Utsav";
-         indexer[2] = "Ronit";
+             indexer.college = "BMC";
+             for (int counter=0; counter<=2; counter++)
+             {
+                 Console.WriteLine(indexer[counter]);
+                 Console.WriteLine(indexer.college);
 
-         indexer.college = "BMC";
-         for (int counter=0; counter<=2; counter++)
-         {
-             Console.WriteLine(indexer[counter]);
-             Console.WriteLine(indexer.college);
+             }
+            */
 
-         }
-        */
+            //Overloading
 
-        /* Overloading
-        
             Animal Cow = new Animal();
             Cow.WhatIEat();
             Cow.WhatIEat("grass");
             Cow.WhatIEat("grass", "straw");
-          */
 
-        // Try...catch 
-        /*
-        try
-        {
-            string[] names = new string[5];
-            names[0] = "Suman";
-            names[1] = "Utsav";
-            names[2] = "Ronit";
-            names[3] = "Bipin";
-            names[4] = "Bishow";
-            //names[5] = "Bishow";
 
-            foreach (string name in names)
+            // Try...catch 
+            /*
+            try
             {
-                Console.WriteLine(name);
+                string[] names = new string[5];
+                names[0] = "Suman";
+                names[1] = "Utsav";
+                names[2] = "Ronit";
+                names[3] = "Bipin";
+                names[4] = "Bishow";
+                //names[5] = "Bishow";
+
+                foreach (string name in names)
+                {
+                    Console.WriteLine(name);
+                }
             }
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine("Something went wrong");
-        }
-        Console.ReadKey();
-        */
+            catch (Exception ex)
+            {
+                Console.WriteLine("Something went wrong");
+            }
+            Console.ReadKey();
+            */
 
 
-        // string to integer
-        /*
-        try
-        {
-            Console.WriteLine("Enter a number: ");
-            string numb = Console.ReadLine();
-            int numA = Convert.ToInt32(numb);
-            Console.WriteLine("Your number is {0}.", numA);
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex.Message);    
-        }
-        */
+            // string to integer
+            /*
+            try
+            {
+                Console.WriteLine("Enter a number: ");
+                string numb = Console.ReadLine();
+                int numA = Convert.ToInt32(numb);
+                Console.WriteLine("Your number is {0}.", numA);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);    
+            }
+            */
 
 
-        // code for Person class 
-        /*    
-        Person Suman = new Person();
-        Suman.Haircolor = "black";
-        Suman.NumberofEyes = 2;
-        Console.WriteLine("Suman has " + Suman.NumberofEyes + " eyes.");
-        Console.WriteLine("Suman has " + Suman.Haircolor + " hair color.");
-        */
+            // code for Person class 
+            /*    
+            Person Suman = new Person();
+            Suman.Haircolor = "black";
+            Suman.NumberofEyes = 2;
+            Console.WriteLine("Suman has " + Suman.NumberofEyes + " eyes.");
+            Console.WriteLine("Suman has " + Suman.Haircolor + " hair color.");
+            */
 
-        //LogicalOperator();
-        //BitwiseOperator();
-        //BitwiseShift();
+            //LogicalOperator();
+            //BitwiseOperator();
+            //BitwiseShift();
             Console.ReadKey();
         }
 
