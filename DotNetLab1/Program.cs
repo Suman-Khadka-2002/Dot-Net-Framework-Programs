@@ -13,7 +13,7 @@ namespace DotNetLab1
 {
     internal class Program
     {
-        static void Main(string[] args) 
+        static void Main(string[] args)
         {
             /*
              // task async 
@@ -145,6 +145,7 @@ namespace DotNetLab1
 
 
             // string to integer
+            
             /*
             try
             {
@@ -175,29 +176,29 @@ namespace DotNetLab1
             Console.ReadKey();
         }
 
-    // task async continue...
-    /*
-        public static async Task Function1() 
-        {
-            await Task.Run(() =>
-                {
-                    for (int i = 0; i < 10; i++)
-                    {
-                        Console.WriteLine("Function1");
-                        Task.Delay(100).Wait();
-                    }
-                });
-        }
-        public static void Function2()
-        {
-            for (int i = 0; i < 10; i++)
+        // task async continue...
+        /*
+            public static async Task Function1() 
             {
-                Console.WriteLine("I am from Function2");
-                Task.Delay(100).Wait();
+                await Task.Run(() =>
+                    {
+                        for (int i = 0; i < 10; i++)
+                        {
+                            Console.WriteLine("Function1");
+                            Task.Delay(100).Wait();
+                        }
+                    });
             }
-        }
+            public static void Function2()
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    Console.WriteLine("I am from Function2");
+                    Task.Delay(100).Wait();
+                }
+            }
 
-    */
+        */
 
 
         /*
