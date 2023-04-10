@@ -249,6 +249,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "E:\\. NET programs\\MVC web project\\portfolio_Website\\wwwroot\\propic.jpg",
+      "PackagePath": "staticwebassets\\propic.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.portfolio_Website.props",
       "PackagePath": "build\\portfolio_Website.props"
     },

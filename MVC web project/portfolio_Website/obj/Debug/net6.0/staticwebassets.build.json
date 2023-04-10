@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+wnP9+ge860iy/8Gg6lTkONlit/2IMMpNVXtbHMxp6M=",
+  "Hash": "skhV0mMIIh7qlaLFonps+/dNjvwdx8FX33SxoXPWnlk=",
   "Source": "portfolio_Website",
   "BasePath": "_content/portfolio_Website",
   "Mode": "Default",
@@ -1086,6 +1086,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "E:\\. NET programs\\MVC web project\\portfolio_Website\\wwwroot\\propic.jpg",
+      "SourceId": "portfolio_Website",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\. NET programs\\MVC web project\\portfolio_Website\\wwwroot\\",
+      "BasePath": "_content/portfolio_Website",
+      "RelativePath": "propic.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\propic.jpg"
     }
   ]
 }
