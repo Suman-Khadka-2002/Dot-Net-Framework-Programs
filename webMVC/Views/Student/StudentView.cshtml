@@ -1,0 +1,25 @@
+﻿@model StudentModel
+
+@{
+    ViewData["Title"] = "StudentView";
+}
+
+<h1>StudentView</h1>
+
+<div>
+    <h4>StudentModel</h4>
+    <hr/>
+</div>
+
+<div>
+    <label>Name: </label>
+    <label>@Model.FirstName</label>
+    <label>@Model.LastName</label><br />
+    <label>Age: </label>
+    <label>@Model.Age</label><br />
+    <label>Address</label>
+    <label>@Model.Address</label><br />
+    <label>College Name: </label>
+    <label>@Model.CollegeName</label><br />
+
+</div>
