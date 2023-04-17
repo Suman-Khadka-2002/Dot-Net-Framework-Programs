@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\Dot-Net-Framework-Programs\\WebMVC\\webMVC.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\Dot-Net-Framework-Programs\\webMVC\\webMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\Dot-Net-Framework-Programs\\WebMVC\\webMVC.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\Dot-Net-Framework-Programs\\webMVC\\webMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Dot-Net-Framework-Programs\\WebMVC\\webMVC.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Dot-Net-Framework-Programs\\webMVC\\webMVC.csproj",
         "projectName": "webMVC",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\Dot-Net-Framework-Programs\\WebMVC\\webMVC.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\Dot-Net-Framework-Programs\\webMVC\\webMVC.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\Dot-Net-Framework-Programs\\WebMVC\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\Dot-Net-Framework-Programs\\webMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

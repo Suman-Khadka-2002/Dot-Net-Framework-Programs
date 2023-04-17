@@ -9,57 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = webMVC
 build_property.RootNamespace = webMVC
-build_property.ProjectDir = C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\WebMVC\
+build_property.ProjectDir = C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\webMVC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\WebMVC
+build_property.MSBuildProjectDirectory = C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\webMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/WebMVC/Views/Bmc/Bmc.cshtml]
+[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/webMVC/Views/Bmc/Bmc.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm1jXEJtYy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/WebMVC/Views/Home/Index.cshtml]
+[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/webMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/WebMVC/Views/Home/Privacy.cshtml]
+[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/webMVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/WebMVC/Views/Home/Suman.cshtml]
+[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/webMVC/Views/Home/Suman.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdW1hbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/WebMVC/Views/Shared/Error.cshtml]
+[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/webMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/WebMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/webMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/WebMVC/Views/Student/College.cshtml]
+[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/webMVC/Views/Student/AddCollege.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxBZGRDb2xsZWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/webMVC/Views/Student/College.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxDb2xsZWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/WebMVC/Views/Student/StudentsView.cshtml]
+[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/webMVC/Views/Student/StudentsView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxTdHVkZW50c1ZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/WebMVC/Views/Student/StudentView.cshtml]
+[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/webMVC/Views/Student/StudentView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxTdHVkZW50Vmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/WebMVC/Views/_ViewImports.cshtml]
+[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/webMVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/WebMVC/Views/_ViewStart.cshtml]
+[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/webMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/WebMVC/Views/Shared/_Layout.cshtml]
+[C:/Users/Admin/source/repos/Dot-Net-Framework-Programs/webMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-yvc2l3mrea

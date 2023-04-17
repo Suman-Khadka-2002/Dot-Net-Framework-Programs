@@ -56,5 +56,10 @@ namespace webMVC.Controllers
             List<CollegeModel> colleges = new List<CollegeModel>();
             return View(colleges);
         }
+        public IActionResult AddCollege()
+        {
+
+            return View();
+        }
     }
 }
