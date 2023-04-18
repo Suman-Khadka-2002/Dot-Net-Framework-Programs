@@ -61,5 +61,33 @@ namespace webMVC.Controllers
 
             return View();
         }
+
+        [HttpPost]
+        public IActionResult CreateCollege(CollegeModel College)
+        {
+            string dataToSave = College.CollegeName + " , " + College.Address;
+            StreamWriter sw = new StreamWriter("wwwroot/college.txt",true);
+            sw.WriteLine(dataToSave);
+            sw.Close();
+
+            return RedirectToAction("College");
+        }
+
+        public IActionResult Colleges()
+        {
+            List<CollegeModel> colleges = new List<CollegeModel>();
+            StreamReader sr = new StreamReader("wwwroot/college.txt");
+            string line = sr.ReadLine();
+            while (line != null) 
+            {
+                string[] collegeDetails = line.Split(',');
+                CollegeModel college = new CollegeModel();
+                College.CollegeName = collegeDetails[0];
+                College.Address = collegeDetails[1];
+                Colleges.Add(college);
+                line = sr.ReadLine();
+            }
+            return (colleges);
+        }
     }
 }

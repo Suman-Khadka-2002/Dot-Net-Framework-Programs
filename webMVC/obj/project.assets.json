@@ -9056,19 +9056,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\skhad\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\. NET programs\\webMVC\\webMVC.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Dot-Net-Framework-Programs\\webMVC\\webMVC.csproj",
       "projectName": "webMVC",
-      "projectPath": "E:\\. NET programs\\webMVC\\webMVC.csproj",
-      "packagesPath": "C:\\Users\\skhad\\.nuget\\packages\\",
-      "outputPath": "E:\\. NET programs\\webMVC\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\Dot-Net-Framework-Programs\\webMVC\\webMVC.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\Dot-Net-Framework-Programs\\webMVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\skhad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9118,7 +9118,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
