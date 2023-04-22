@@ -55,24 +55,10 @@ namespace webMVC.Controllers
         {
             List<CollegeModel> colleges = new List<CollegeModel>();
 
-            StreamReader sr = new StreamReader("wwwroot/college.txt");
-            string line = sr.ReadLine();
-            while (line != null)
-            {
-                string[] CollegeDetail = line.Split(',');
-                CollegeModel College = new CollegeModel();
-                College.CollegeName = CollegeDetail[0];
-                College.Address = CollegeDetail[1];
-                colleges.Add(College);
-                line = sr.ReadLine();
-            }
-            sr.Close();
-
             return View(colleges);
         }
         public IActionResult AddCollege()
         {
-
             return View();
         }
 
@@ -86,23 +72,23 @@ namespace webMVC.Controllers
 
             return RedirectToAction("College");
         }
-        //[HttpPost]
-        //public IActionResult Colleges()
-        //{
-        //    List<CollegeModel>colleges = new List<CollegeModel>();
-        //    StreamReader sr = new StreamReader("wwwroot/college.txt");
-        //    string line = sr.ReadLine();
-        //    while (line != null) 
-        //    {
-        //        string[] CollegeDetail = line.Split(',');
-        //        CollegeModel College = new CollegeModel();
-        //        College.CollegeName = CollegeDetail[0];
-        //        College.Address = CollegeDetail[1];
-        //        colleges.Add(College);
-        //        line = sr.ReadLine();
-        //    }
-        //    sr.Close();
-        //    return View(colleges);
-        //}
+        [HttpPost]
+        public IActionResult Colleges()
+        {
+            List<CollegeModel> colleges = new List<CollegeModel>();
+            StreamReader sr = new StreamReader("wwwroot/college.txt");
+            string line = sr.ReadLine();
+            while (line != null)
+            {
+                string[] CollegeDetail = line.Split(',');
+                CollegeModel College = new CollegeModel();
+                College.CollegeName = CollegeDetail[0];
+                College.Address = CollegeDetail[1];
+                colleges.Add(College);
+                line = sr.ReadLine();
+            }
+            sr.Close();
+            return View(colleges);
+        }
     }
 }
