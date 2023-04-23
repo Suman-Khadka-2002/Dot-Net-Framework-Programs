@@ -5,6 +5,7 @@ namespace webMVC.Controllers
 {
     public class StudentController : Controller
     {
+        /*
         public IActionResult Index()
         {
             return View();
@@ -50,10 +51,25 @@ namespace webMVC.Controllers
 
             return View(Students);
         }
+        */
 
         public IActionResult College()
         {
             List<CollegeModel> colleges = new List<CollegeModel>();
+
+            StreamReader sr = new StreamReader("wwwroot/college.txt");
+            string line = sr.ReadLine();
+            while (line != null)
+            {
+                string[] CollegeDetail = line.Split(',');
+                CollegeModel college = new CollegeModel();
+                college.CollegeName = CollegeDetail[0];
+                college.Address = CollegeDetail[1];
+                college.University = CollegeDetail[2];
+                colleges.Add(college);
+                line = sr.ReadLine();
+            }
+            sr.Close();
 
             return View(colleges);
         }
@@ -63,32 +79,15 @@ namespace webMVC.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateCollege(CollegeModel College)
+        public IActionResult CreateCollege(CollegeModel college)
         {
-            string dataToSave = College.CollegeName + " , " + College.Address;
-            StreamWriter sw = new StreamWriter("wwwroot/college.txt",true);
+            string dataToSave = college.CollegeName + " , " + college.Address + "," + college.University;
+            StreamWriter sw = new StreamWriter("wwwroot/college.txt", append: true);
             sw.WriteLine(dataToSave);
             sw.Close();
 
             return RedirectToAction("College");
         }
-        [HttpPost]
-        public IActionResult Colleges()
-        {
-            List<CollegeModel> colleges = new List<CollegeModel>();
-            StreamReader sr = new StreamReader("wwwroot/college.txt");
-            string line = sr.ReadLine();
-            while (line != null)
-            {
-                string[] CollegeDetail = line.Split(',');
-                CollegeModel College = new CollegeModel();
-                College.CollegeName = CollegeDetail[0];
-                College.Address = CollegeDetail[1];
-                colleges.Add(College);
-                line = sr.ReadLine();
-            }
-            sr.Close();
-            return View(colleges);
-        }
+        
     }
 }
