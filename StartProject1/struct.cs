@@ -33,7 +33,9 @@
 //    }
 //}
 
+/*
 // Enum
+
 
 using System;
 
@@ -51,3 +53,4 @@ class Enumprgram
 
     }
 }
+*/
