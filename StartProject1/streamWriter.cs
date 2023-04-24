@@ -1,4 +1,6 @@
-﻿using System;
+﻿/*
+
+using System;
 using System.IO;
 
 class Program
@@ -19,3 +21,4 @@ class Program
         Console.ReadLine();
     }
 }
+*/
