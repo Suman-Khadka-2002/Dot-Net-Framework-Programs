@@ -4,7 +4,7 @@
 
 namespace webMVC.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")] //can be called using action name
     [ApiController]
     public class WebAPIController : ControllerBase
     {
@@ -14,9 +14,18 @@ namespace webMVC.Controllers
         //{
         //    return new string[] { "value1", "value2" };
         //}
-        public IEnumerable<string> Get()
+        public object Get()
         {
-            return new string[] { "value1", "value2" };
+            //return new string[] { "value1", "value2" };
+            return new { Name = "Suman", Address = "Kathmandu" }; //displays in json format
+        }
+        public List<object> GetList()
+        {
+            List<object> list = new List<object>(); //creating new list
+            list.Add(new { name = "Eren", anime = "AOT" });
+            list.Add(new { name = "Mash", anime = "Mashle" });
+            list.Add(new { name = "Asta", anime = "Black Clover" });
+            return list;  // displays json data in a list 
         }
 
         // GET api/<WebAPIController>/5

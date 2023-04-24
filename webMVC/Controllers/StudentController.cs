@@ -1,10 +1,23 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using webMVC.Models;
 
 namespace webMVC.Controllers
 {
     public class StudentController : Controller
     {
+        IDateService _service;
+        public StudentController(IDateService dateService)
+        {
+            _service = dateService;
+        }
+        public IActionResult GetDate()
+        {
+
+            //DateService dateService = new DateService();
+            return Content(_service.GetDate().ToString());
+        }
+
         /*
         public IActionResult Index()
         {
