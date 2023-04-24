@@ -102,5 +102,14 @@ namespace webMVC.Controllers
             return RedirectToAction("College");
         }
         
+        public IActionResult Students()
+        {
+            List<StudentsModel> students = new List<StudentsModel>();
+            return View(students);
+        }
+        public IActionResult AddStudent()
+        {
+            return View();
+        }
     }
 }
