@@ -492,3 +492,9 @@ E:\. NET programs\webMVC\obj\Debug\net6.0\refint\webMVC.dll
 E:\. NET programs\webMVC\obj\Debug\net6.0\webMVC.pdb
 E:\. NET programs\webMVC\obj\Debug\net6.0\webMVC.genruntimeconfig.cache
 E:\. NET programs\webMVC\obj\Debug\net6.0\ref\webMVC.dll
+C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\webMVC\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\webMVC\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\webMVC\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\webMVC\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\webMVC\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Admin\source\repos\Dot-Net-Framework-Programs\webMVC\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

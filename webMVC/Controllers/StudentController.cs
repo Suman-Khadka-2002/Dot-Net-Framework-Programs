@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using System.Data.SqlClient;
 using webMVC.Models;
 
 namespace webMVC.Controllers
@@ -107,9 +108,27 @@ namespace webMVC.Controllers
             List<StudentsModel> students = new List<StudentsModel>();
             return View(students);
         }
+        [HttpGet]
         public IActionResult AddStudent()
         {
             return View();
+        }
+
+        //making action to save to db
+        //form always uses POST
+        [HttpPost]
+        public IActionResult AddToDatabase(StudentsModel students)   //student ma form data aauxa
+        {
+            //1. connection string
+            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=BMCdb;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
+            SqlConnection conn = new SqlConnection (connectionString); //2. connection
+            conn.Open(); // open connection
+            string command = "Insert into Student Values (1, 'Suman', 'Kathmandu', 'CSIT')";  // sql command
+            SqlCommand cmd = new SqlCommand (command, conn);  //4. sql command this turn string above to sql command
+            cmd.ExecuteNonQuery ();  // because its not a query now
+            conn.Close();
+
+            return View(); 
         }
     }
 }
