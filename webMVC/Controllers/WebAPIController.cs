@@ -14,12 +14,12 @@ namespace webMVC.Controllers
         //{
         //    return new string[] { "value1", "value2" };
         //}
-        public object Get()
+        public object Getdata()
         {
             //return new string[] { "value1", "value2" };
             return new { Name = "Suman", Address = "Kathmandu" }; //displays in json format
         }
-        public List<object> GetList()
+        public List<object> GetUsers()
         {
             List<object> list = new List<object>(); //creating new list
             list.Add(new { name = "Eren", anime = "AOT" });
