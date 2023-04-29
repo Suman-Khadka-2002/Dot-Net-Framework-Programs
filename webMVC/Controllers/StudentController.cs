@@ -120,13 +120,13 @@ namespace webMVC.Controllers
         public IActionResult AddToDatabase(StudentsModel students)   //student ma form data aauxa
         {
             //1. connection string
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=BMCdb;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
+            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=bmc;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
             SqlConnection conn = new SqlConnection (connectionString); //2. connection
-            conn.Open(); // open connection
-            string command = "Insert into Student Values (1, 'Suman', 'Kathmandu', 'CSIT')";  // sql command
+            conn.Open(); //3. open connection
+            string command = "Insert into Students (Id, StudentName, Address, Course) Values (1, 'Suman', 'Kathmandu', 'CSIT'), (2, 'John', 'New York', 'Engineering'), (3, 'Mary', 'London', 'Business'), (4, 'Tanjiro Kamado', 'Mt.Kumotori, Okutama', 'Water Breathing Style')";            // sql command
             SqlCommand cmd = new SqlCommand (command, conn);  //4. sql command this turn string above to sql command
-            cmd.ExecuteNonQuery ();  // because its not a query now
-            conn.Close();
+            cmd.ExecuteNonQuery ();  //5. because its not a query now
+            conn.Close(); //6.
 
             return View(); 
         }
