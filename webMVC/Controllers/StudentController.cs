@@ -105,7 +105,27 @@ namespace webMVC.Controllers
         
         public IActionResult Students()
         {
+            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=bmc;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
+            SqlConnection conn = new SqlConnection(connectionString); //2. connection
+            conn.Open(); //3. open connection
+
+            string command = "Select * from Students";            // sql command
+            SqlCommand cmd = new SqlCommand(command, conn);  //4. sql command this turn string above to sql command
+
+            SqlDataReader dr = cmd.ExecuteReader();
             List<StudentsModel> students = new List<StudentsModel>();
+            while (dr.Read())
+            {
+                StudentsModel student = new StudentsModel();
+                student.StudentId = Convert.ToInt32(dr["Id"]);
+                student.StudentName = Convert.ToString(dr["StudentName"]);
+                student.Address = Convert.ToString(dr["Address"]);
+                student.Course = Convert.ToString(dr["Course"]);
+
+                students.Add(student);
+            }
+
+            conn.Close();
             return View(students);
         }
         [HttpGet]
@@ -123,12 +143,12 @@ namespace webMVC.Controllers
             string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=bmc;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
             SqlConnection conn = new SqlConnection (connectionString); //2. connection
             conn.Open(); //3. open connection
-            string command = "Insert into Students (Id, StudentName, Address, Course) Values (1, 'Suman', 'Kathmandu', 'CSIT'), (2, 'John', 'New York', 'Engineering'), (3, 'Mary', 'London', 'Business'), (4, 'Tanjiro Kamado', 'Mt.Kumotori, Okutama', 'Water Breathing Style')";            // sql command
-            SqlCommand cmd = new SqlCommand (command, conn);  //4. sql command this turn string above to sql command
+          //string command = "Insert into Students (Id, StudentName, Address, Course) Values (1, 'Suman', 'Kathmandu', 'CSIT'), (2, 'John', 'New York', 'Engineering'), (3, 'Mary', 'London', 'Business'), (4, 'Tanjiro Kamado', 'Mt.Kumotori, Okutama', 'Water Breathing Style')";            // sql command
+            string command = "Insert into Students Values ('"+students.StudentId+"','"+students.StudentName+"','"+students.Address+"','"+students.Course+"')"; SqlCommand cmd = new SqlCommand (command, conn);  //4. sql command this turn string above to sql command
             cmd.ExecuteNonQuery ();  //5. because its not a query now
             conn.Close(); //6.
 
-            return View(); 
+            return RedirectToAction("Students"); 
         }
     }
 }
