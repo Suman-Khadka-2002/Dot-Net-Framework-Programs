@@ -43,9 +43,9 @@
                 @Html.DisplayFor(modelItem => item.Course)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Edit", "EditStudent", new {  id=item.StudentId  }) |
+                @Html.ActionLink("Details", "StudentDetails", new {  id=item.StudentId  }) |
+                @Html.ActionLink("Delete", "Delete", new {  id=item.StudentId  })
             </td>
         </tr>
 }

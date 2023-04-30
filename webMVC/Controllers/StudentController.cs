@@ -150,5 +150,42 @@ namespace webMVC.Controllers
 
             return RedirectToAction("Students"); 
         }
+
+        [HttpGet]
+        public IActionResult EditStudent(int id)
+        {
+            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=bmc;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+            string command = "SELECT * FROM Students WHERE Id = " + id;
+            SqlCommand cmd = new SqlCommand(command, conn);
+            SqlDataReader dr = cmd.ExecuteReader();
+            StudentsModel student = new StudentsModel();
+            while (dr.Read())
+            {
+                student.StudentId = Convert.ToInt32(dr["Id"]);
+                student.StudentName = Convert.ToString(dr["StudentName"]);
+                student.Address = Convert.ToString(dr["Address"]);
+                student.Course = Convert.ToString(dr["Course"]);
+            }
+            conn.Close();
+            return View(student);
+        }
+
+        [HttpPost]
+        public IActionResult UpdateStudent(StudentsModel student)
+        {
+            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=bmc;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+
+            string command = "Update Students set StudentName='" + student.StudentName + "', Address='" + student.Address + "', Course='" + student.Course + "' where Id='" + student.StudentId + "'";
+            SqlCommand cmd = new SqlCommand(command, conn);
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
+
+            return RedirectToAction("Students");
+        }
     }
 }
