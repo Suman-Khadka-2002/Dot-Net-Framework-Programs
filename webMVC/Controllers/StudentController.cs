@@ -187,5 +187,29 @@ namespace webMVC.Controllers
 
             return RedirectToAction("Students");
         }
+
+        public IActionResult StudentDetails(int id)
+        {
+            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=bmc;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+
+            string command = "SELECT * FROM Students WHERE Id='" + id + "'";
+            SqlCommand cmd = new SqlCommand(command, conn);
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            StudentsModel student = new StudentsModel();
+            if (dr.Read())
+            {
+                student.StudentId = Convert.ToInt32(dr["Id"]);
+                student.StudentName = Convert.ToString(dr["StudentName"]);
+                student.Address = Convert.ToString(dr["Address"]);
+                student.Course= Convert.ToString(dr["Course"]);
+            }
+
+            conn.Close();
+
+            return View(student);
+        }
     }
 }
