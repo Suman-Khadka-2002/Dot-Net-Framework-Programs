@@ -1,6 +1,7 @@
-﻿using System;
-using System.IO;
+﻿// File I/O : streamReader 
 
+using System;
+using System.IO;
 class Program
 {
     static void Main()
