@@ -1,4 +1,6 @@
-﻿using EntityFrameworkProj.Models;
+// home controller
+
+using EntityFrameworkProj.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
