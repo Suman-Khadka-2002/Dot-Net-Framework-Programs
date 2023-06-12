@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QRbnHs8AdePC6HQkYBJM0l16fWGgg8i/ix8Wmitgf5qDMtAOGp547VMAImGIa03ijoA+EOxRGC1lxgY2dE/9GQ==",
+  "dgSpecHash": "tq6bLJgjjKbAErGEdgPL5/qPnTh5sK9JTMGn/txmSVl2EQAfaO5ANZFKe4X4u19C//BPQGfbmymyNUemnd48/w==",
   "success": true,
-  "projectFilePath": "E:\\. NET programs\\EntityFramework\\EntityFrameworkProj\\EntityFrameworkProj.csproj",
+  "projectFilePath": "E:\\. NET programs\\EntityFrameworkProj\\EntityFrameworkProj.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\skhad\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\skhad\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\. NET programs\\EntityFramework\\EntityFrameworkProj\\EntityFrameworkProj.csproj": {}
+    "E:\\. NET programs\\EntityFrameworkProj\\EntityFrameworkProj.csproj": {}
   },
   "projects": {
-    "E:\\. NET programs\\EntityFramework\\EntityFrameworkProj\\EntityFrameworkProj.csproj": {
+    "E:\\. NET programs\\EntityFrameworkProj\\EntityFrameworkProj.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\. NET programs\\EntityFramework\\EntityFrameworkProj\\EntityFrameworkProj.csproj",
+        "projectUniqueName": "E:\\. NET programs\\EntityFrameworkProj\\EntityFrameworkProj.csproj",
         "projectName": "EntityFrameworkProj",
-        "projectPath": "E:\\. NET programs\\EntityFramework\\EntityFrameworkProj\\EntityFrameworkProj.csproj",
+        "projectPath": "E:\\. NET programs\\EntityFrameworkProj\\EntityFrameworkProj.csproj",
         "packagesPath": "C:\\Users\\skhad\\.nuget\\packages\\",
-        "outputPath": "E:\\. NET programs\\EntityFramework\\EntityFrameworkProj\\obj\\",
+        "outputPath": "E:\\. NET programs\\EntityFrameworkProj\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\skhad\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -74,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
