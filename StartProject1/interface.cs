@@ -29,3 +29,43 @@
 //        Console.ReadLine();
 //    }
 //}
+
+
+// Another example of interface
+
+using System;
+
+public interface Iplayable
+{
+    void Play();
+    void Pause();
+    void Stop();
+}
+// Implementing interface in class
+public class MusicPlayer : Iplayable
+{
+    public void Play()
+    {
+        Console.WriteLine("Music is playing.");
+    }
+    public void Pause()
+    {
+        Console.WriteLine("Music is paused.");
+    }
+    public void Stop()
+    {
+        Console.WriteLine("Music is stopped.");
+    }
+}
+
+class Program
+{
+    public static void Main()
+    {
+        Iplayable iplayable = new MusicPlayer();
+        iplayable.Play();
+        iplayable.Pause();
+        iplayable.Stop();
+        Console.ReadLine();
+    }
+}
