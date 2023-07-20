@@ -1,4 +1,4 @@
-﻿//using System;
+﻿using System;
 
 //public partial class MyClass
 //{
@@ -8,3 +8,14 @@
 //    }
 //}
 
+
+public partial class Person
+{
+    public int Age { get; set; }
+
+    public void CelebrateBirthday()
+    {
+        Age++;
+        Console.WriteLine($"Happy Birthday! I am now {Age} years old.");
+    }
+}
