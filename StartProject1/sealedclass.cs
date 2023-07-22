@@ -1,4 +1,4 @@
-﻿//using System;
+﻿using System;
 
 //sealed class MyClass
 //{
@@ -24,3 +24,30 @@
 //        Console.ReadLine();
 //    }
 //}
+
+
+public sealed class Rectangle
+{
+    public double Width { get; set; }
+    public double Height { get; set; }
+
+    public Rectangle(double width, double height)
+    {
+        Width = width;
+        Height = height;
+    }
+
+    public double CalculateArea()
+    {
+        return Width * Height;
+    }
+}
+class Program
+{
+    public static void Main()
+    {
+        Rectangle rectangle = new Rectangle(5.0, 10.0);
+        Console.WriteLine("Rectangle Area: "+ rectangle.CalculateArea());
+        Console.ReadLine();
+    }
+}
