@@ -39,7 +39,7 @@ class Program
 
         // Create an instance of the concrete class Circle
         Circle circle = new Circle(5.0);
-        circle.DisplayArea(); // Output: Area: 78.53981633974483
+        circle.DisplayArea();
         Console.ReadLine();
     }
 }
