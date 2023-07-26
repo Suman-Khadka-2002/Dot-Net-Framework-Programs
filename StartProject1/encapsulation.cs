@@ -1,4 +1,6 @@
-﻿using System;
+﻿// encapsulation program
+
+using System;
 
 public class BankAccount
 {
