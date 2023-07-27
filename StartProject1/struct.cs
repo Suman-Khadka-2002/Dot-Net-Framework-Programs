@@ -34,7 +34,7 @@
 //}
 
 /*
-// Enum
+// Enum -> a distinct value type that defines a set of named constants representing underlying integral values.
 
 
 using System;
