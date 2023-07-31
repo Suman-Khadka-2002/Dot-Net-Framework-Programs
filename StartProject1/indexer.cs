@@ -1,57 +1,78 @@
-﻿//using System;
+﻿////using System;
 
-//public class MyCollection
+////public class MyCollection
+////{
+////    private string[] items = new string[5];
+
+////    public string this[int index]
+////    {
+////        get { return items[index]; }
+////        set { items[index] = value; }
+////    }
+////}
+
+////class Program
+////{
+////    static void Main(string[] args)
+////    {
+////        MyCollection collection = new MyCollection();
+////        collection[0] = "apple";
+////        collection[1] = "banana";
+////        collection[2] = "cherry";
+
+////        Console.WriteLine("Items in collection:");
+////        for (int i = 0; i < 3; i++)
+////        {
+////            Console.WriteLine(collection[i]);
+////        }
+
+////        Console.ReadLine();
+////    }
+////}
+
+//using System;
+
+//class SampleCollection<T>
 //{
-//    private string[] items = new string[5];
+//    // Declare an array to store the data elements.
+//    private T[] arr = new T[100];
 
-//    public string this[int index]
+//    // Define the indexer to allow client code to use [] notation.
+//    public T this[int i]
 //    {
-//        get { return items[index]; }
-//        set { items[index] = value; }
+//        get { return arr[i]; }
+//        set { arr[i] = value; }
 //    }
 //}
 
 //class Program
 //{
-//    static void Main(string[] args)
+//    static void Main()
 //    {
-//        MyCollection collection = new MyCollection();
-//        collection[0] = "apple";
-//        collection[1] = "banana";
-//        collection[2] = "cherry";
-
-//        Console.WriteLine("Items in collection:");
-//        for (int i = 0; i < 3; i++)
-//        {
-//            Console.WriteLine(collection[i]);
-//        }
-
+//        var stringCollection = new SampleCollection<string>();
+//        stringCollection[0] = "Hello, World";
+//        Console.WriteLine(stringCollection[0]);
 //        Console.ReadLine();
 //    }
 //}
-
 using System;
+ public class IndexerClass
+  {
+      public string[] val = new string[3];
 
-class SampleCollection<T>
+      public string this[int index]
+      {
+            get { return val[index];}
+            set { val[index] = value;}
+      }
+  }
+class program
 {
-    // Declare an array to store the data elements.
-    private T[] arr = new T[100];
-
-    // Define the indexer to allow client code to use [] notation.
-    public T this[int i]
+    public static void Main()
     {
-        get { return arr[i]; }
-        set { arr[i] = value; }
-    }
-}
-
-class Program
-{
-    static void Main()
-    {
-        var stringCollection = new SampleCollection<string>();
-        stringCollection[0] = "Hello, World";
-        Console.WriteLine(stringCollection[0]);
+        var ReadData = new IndexerClass();
+        ReadData[0]= "hi";
+        Console.WriteLine(ReadData[0] );
         Console.ReadLine();
     }
 }
