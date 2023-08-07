@@ -1,53 +1,53 @@
-﻿using System;
+﻿//using System;
 
-//sealed class MyClass
+////sealed class MyClass
+////{
+////    private string msg;
+
+////    public MyClass(string message)
+////    {
+////        msg = message;
+////    }
+
+////    public void SayHello()
+////    {
+////        Console.WriteLine(msg);
+////    }
+////}
+
+////class Program
+////{
+////    static void Main(string[] args)
+////    {
+////        MyClass myObj = new MyClass("Hello from MyClass!");
+////        myObj.SayHello();
+////        Console.ReadLine();
+////    }
+////}
+
+
+//public sealed class Rectangle
 //{
-//    private string msg;
+//    public double Width { get; set; }
+//    public double Height { get; set; }
 
-//    public MyClass(string message)
+//    public Rectangle(double width, double height)
 //    {
-//        msg = message;
+//        Width = width;
+//        Height = height;
 //    }
 
-//    public void SayHello()
+//    public double CalculateArea()
 //    {
-//        Console.WriteLine(msg);
+//        return Width * Height;
 //    }
 //}
-
 //class Program
 //{
-//    static void Main(string[] args)
+//    public static void Main()
 //    {
-//        MyClass myObj = new MyClass("Hello from MyClass!");
-//        myObj.SayHello();
+//        Rectangle rectangle = new Rectangle(5.0, 10.0);
+//        Console.WriteLine("Rectangle Area: "+ rectangle.CalculateArea());
 //        Console.ReadLine();
 //    }
 //}
-
-
-public sealed class Rectangle
-{
-    public double Width { get; set; }
-    public double Height { get; set; }
-
-    public Rectangle(double width, double height)
-    {
-        Width = width;
-        Height = height;
-    }
-
-    public double CalculateArea()
-    {
-        return Width * Height;
-    }
-}
-class Program
-{
-    public static void Main()
-    {
-        Rectangle rectangle = new Rectangle(5.0, 10.0);
-        Console.WriteLine("Rectangle Area: "+ rectangle.CalculateArea());
-        Console.ReadLine();
-    }
-}
