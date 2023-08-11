@@ -1,21 +1,21 @@
-﻿using System;
+﻿//using System;
 
-//public partial class MyClass
+////public partial class MyClass
+////{
+////    public void Method1()
+////    {
+////        Console.WriteLine("Method1 called");
+////    }
+////}
+
+
+//public partial class Person
 //{
-//    public void Method1()
+//    public string FirstName { get; set; }
+//    public string LastName { get; set; }
+
+//    public void SayHello()
 //    {
-//        Console.WriteLine("Method1 called");
+//        Console.WriteLine($"Hello, My name is {FirstName} {LastName}");
 //    }
 //}
-
-
-public partial class Person
-{
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-
-    public void SayHello()
-    {
-        Console.WriteLine($"Hello, My name is {FirstName} {LastName}");
-    }
-}
