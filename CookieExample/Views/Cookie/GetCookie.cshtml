@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "GetCookie";
+}
+
+<h1>GetCookie</h1>
+@if (ViewBag.Username != null)
+{
+    <p>Username: @ViewBag.Username</p>
+}
+else
+{
+    <p>No cookie found.</p>
+}

@@ -47,8 +47,10 @@
     <Compile Include="arraylist.cs" />
     <Compile Include="ArraysString.cs" />
     <Compile Include="AsyncAwait.cs" />
+    <Compile Include="abstractclass.cs" />
     <Compile Include="defaultConstructor.cs" />
     <Compile Include="delegate.cs" />
+    <Compile Include="encapsulation.cs" />
     <Compile Include="file1partial.cs" />
     <Compile Include="file2partial.cs" />
     <Compile Include="filestream.cs" />
@@ -59,9 +61,10 @@
     <Compile Include="interface.cs" />
     <Compile Include="list.cs" />
     <Compile Include="MultipleInheritence.cs" />
+    <Compile Include="namespace.cs" />
     <Compile Include="overlaod.cs" />
     <Compile Include="overridinghiding.cs" />
-    <Compile Include="programPartial.cs" />
+    <Compile Include="partialclass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sealedclass.cs" />
     <Compile Include="streamReader.cs" />

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webMVC", "webMVC.csproj", "{D8CC8363-3B8D-4DC4-8ABC-2DF41860B7C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "webMVC", "webMVC.csproj", "{D8CC8363-3B8D-4DC4-8ABC-2DF41860B7C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SessionStateManagement", "..\Statemanagement\SessionStateManagement.csproj", "{9416D572-004B-46EF-99FC-1182D82C3813}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D8CC8363-3B8D-4DC4-8ABC-2DF41860B7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8CC8363-3B8D-4DC4-8ABC-2DF41860B7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8CC8363-3B8D-4DC4-8ABC-2DF41860B7C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9416D572-004B-46EF-99FC-1182D82C3813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9416D572-004B-46EF-99FC-1182D82C3813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9416D572-004B-46EF-99FC-1182D82C3813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9416D572-004B-46EF-99FC-1182D82C3813}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,37 @@
+﻿@model JqueryExample.Models.UserModel
+
+<form id="userForm" asp-controller="Jquery" asp-action="Submit" method="post">
+    <label for="Name">Name:</label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span><br />
+
+    <label for="Age">Age:</label>
+    <input asp-for="Age" />
+    <span asp-validation-for="Age"></span><br />
+
+    <label for="Gender">Gender:</label>
+    <select asp-for="Gender">
+        <option value="">Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+    <span asp-validation-for="Gender"></span><br />
+
+    <label for="Married">Married:</label>
+    <input asp-for="Married" type="checkbox" /><br />
+
+    <button type="submit">Submit</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#Married").change(function () {
+            if ($(this).is(":checked")) {
+                $("#Age").val("25");
+            } else {
+                $("#Age").val("");
+            }
+        });
+    });
+</script>

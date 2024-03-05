@@ -67,41 +67,41 @@ namespace webMVC.Controllers
         }
         */
 
-        public IActionResult College()
-        {
-            List<CollegeModel> colleges = new List<CollegeModel>();
+        //public IActionResult College()
+        //{
+        //    List<CollegeModel> colleges = new List<CollegeModel>();
 
-            StreamReader sr = new StreamReader("wwwroot/college.txt");
-            string line = sr.ReadLine();
-            while (line != null)
-            {
-                string[] CollegeDetail = line.Split(',');
-                CollegeModel college = new CollegeModel();
-                college.CollegeName = CollegeDetail[0];
-                college.Address = CollegeDetail[1];
-                college.University = CollegeDetail[2];
-                colleges.Add(college);
-                line = sr.ReadLine();
-            }
-            sr.Close();
+        //    StreamReader sr = new StreamReader("wwwroot/college.txt");
+        //    string line = sr.ReadLine();
+        //    while (line != null)
+        //    {
+        //        string[] CollegeDetail = line.Split(',');
+        //        CollegeModel college = new CollegeModel();
+        //        college.CollegeName = CollegeDetail[0];
+        //        college.Address = CollegeDetail[1];
+        //        college.University = CollegeDetail[2];
+        //        colleges.Add(college);
+        //        line = sr.ReadLine();
+        //    }
+        //    sr.Close();
 
-            return View(colleges);
-        }
-        public IActionResult AddCollege()
-        {
-            return View();
-        }
+        //    return View(colleges);
+        //}
+        //public IActionResult AddCollege()
+        //{
+        //    return View();
+        //}
 
-        [HttpPost]
-        public IActionResult CreateCollege(CollegeModel college)
-        {
-            string dataToSave = college.CollegeName + " , " + college.Address + "," + college.University;
-            StreamWriter sw = new StreamWriter("wwwroot/college.txt", append: true);
-            sw.WriteLine(dataToSave);
-            sw.Close();
+        //[HttpPost]
+        //public IActionResult CreateCollege(CollegeModel college)
+        //{
+        //    string dataToSave = college.CollegeName + " , " + college.Address + "," + college.University;
+        //    StreamWriter sw = new StreamWriter("wwwroot/college.txt", append: true);
+        //    sw.WriteLine(dataToSave);
+        //    sw.Close();
 
-            return RedirectToAction("College");
-        }
+        //    return RedirectToAction("College");
+        //}
         
         public IActionResult Students()
         {
@@ -144,7 +144,9 @@ namespace webMVC.Controllers
             SqlConnection conn = new SqlConnection (connectionString); //2. connection
             conn.Open(); //3. open connection
           //string command = "Insert into Students (Id, StudentName, Address, Course) Values (1, 'Suman', 'Kathmandu', 'CSIT'), (2, 'John', 'New York', 'Engineering'), (3, 'Mary', 'London', 'Business'), (4, 'Tanjiro Kamado', 'Mt.Kumotori, Okutama', 'Water Breathing Style')";            // sql command
-            string command = "Insert into Students Values ('"+students.StudentId+"','"+students.StudentName+"','"+students.Address+"','"+students.Course+"')"; SqlCommand cmd = new SqlCommand (command, conn);  //4. sql command this turn string above to sql command
+            string command = "Insert into Students Values ('" + students.StudentId + "','" + students.StudentName + "','" + students.Address + "','" + students.Course + "')"; 
+            
+            SqlCommand cmd = new SqlCommand (command, conn);  //4. sql command this turn string above to sql command
             cmd.ExecuteNonQuery ();  //5. because its not a query now
             conn.Close(); //6.
 

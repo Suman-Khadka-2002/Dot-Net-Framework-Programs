@@ -1,0 +1,100 @@
+AuthorizationAndAuthentication/
+
+# .NET
+bin/
+obj/
+*.user
+*.vscode
+*.suo
+*.sln.docstates
+
+# NuGet Packages
+*.nuget.props
+*.paket.*
+*.dotnetcli.*
+
+# Build Results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Ll]og/
+[Ll]ogs/
+[Bb]uild/
+
+# Visual Studio files
+*.VisualState.xml
+*.suo
+*.cache
+*.csproj.user
+*.dbmdl
+*.jfm
+*.psess
+*.vsp
+*.vspx
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.sdf
+*.opensdf
+*.unsuccessfulbuild
+*.resuser
+*.scc
+*.idb
+*.pdb
+*.ipch/
+*.pch
+*.obj
+*.res
+*.resources
+*.pch
+*.ipch
+*.aps
+*.ncb
+*.vspscc
+*.vssscc
+*.mdb
+*.ldb
+*.svclog
+*.csproj.vspscc
+*.psscc
+*.scc
+*.ts
+*.bak
+*.cache
+*.csproj.FileListAbsolute.txt
+*.generated.cs
+
+# Rider files
+.idea/
+*.sln.iml
+
+# ReSharper files
+_ReSharper*/
+*.ReSharper*/
+*.DotSettings.user
+
+# Rider directory-based .NETCore project format
+.idea/
+
+# Coverlet
+coverage/
+
+# MSSCCI
+_UpgradeReport_Files/

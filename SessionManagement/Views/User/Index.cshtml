@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<h1>Home</h1>
+
+<a asp-action="SetSession" asp-controller="User" asp-route-name="Suman" asp-route-age="21">Set Session</a>
+<br />
+<a asp-action="GetSession" asp-controller="User">Get Session</a>
+<br />
+<a asp-action="DisplayMessage" asp-controller="User">Display Message</a>

@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Jquery";
+}
+<form id="myForm" action="function()">
+    <label for="name">Name: </label>
+    <input type="text" id="name" required><br /><br />
+
+    <label for="age">Age: </label>
+    <input type="number" id="age" required><br /><br />
+
+    <label for="married">Married: </label>
+    <input type="checkbox" id="married"><br /><br />
+    
+    <label for="gender">Gender: </label>
+    <select id="gender" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select><br /><br />
+    <input type="submit" value="Submit" />
+
+</form>
+
+<script>
+    $(document).ready(function () {
+        $("#married").change(function () {
+            if ($(this).is(":checked")) {
+                $("#age").vale("25");
+            }
+            else {
+                $("#age").val("");
+            }
+        });
+        $("#myform").submit(function (event) {
+            var name = $("#name").val();
+            var age = $("#age").val();
+            var gender = $("#gender").val();
+
+            if (name === "" || age === "" || gender === "") {
+                alert("Please fill all fields");
+                event.preventDefault();
+            }
+        });
+    });
+</script>

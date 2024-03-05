@@ -1,0 +1,16 @@
+﻿@model SessionManagement.Models.User
+
+@{
+    ViewData["Title"] = "Get Session";
+}
+
+<h1>Get Session</h1>
+@if (Model != null)
+{
+    <p>Name: @Model.Name</p>
+    <p>Age: @Model.Age</p>
+}
+else
+{
+    <p>Session data not found.</p>
+}
